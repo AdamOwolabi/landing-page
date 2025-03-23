@@ -1,12 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i");
 
-/*
-	Story by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -32,6 +26,10 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
 
 ol, ul {
 	list-style: none;
@@ -53,6 +51,29 @@ table {
 
 body {
 	-webkit-text-size-adjust: none;
+}
+
+.profile-photo-container {
+	width: 300px; /* Adjust as needed */
+	height: 300px; /* Adjust as needed */
+	border-radius: 50%;
+	overflow: hidden; /* Hides any part of the image that spills out of the circle */
+	transform: translate(-180%, 85%); /* Center the container */
+}
+.profile-photo-container img {
+	width: 100%;
+	height: 150%;
+	object-fit: cover; /* Ensures the image covers the container and doesn't distort */
+}
+
+/*Projects Coming Soon--> */
+.projects-text{
+	width: 90%;
+	height: 150%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
 }
 
 mark {
@@ -2876,9 +2897,15 @@ input, select, textarea {
 /* Icons */
 
 	ul.icons {
-		cursor: default;
-		list-style: none;
-		padding-left: 0;
+		width: 80%;
+		height: 150%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0;
+		margin: 0;
+
+
 	}
 
 		ul.icons li {
@@ -8251,7 +8278,7 @@ input, select, textarea {
 
 	#wrapper {
 		background-color: inherit;
-		width: 100%;
+		width: 120%;
 		overflow-x: hidden;
 	}
 
@@ -8276,7 +8303,7 @@ input, select, textarea {
 				color: #ffffff;
 			}
 
-			#wrapper > .invert h1, #wrapper > .invert h2, #wrapper > .invert h3, #wrapper > .invert h4, #wrapper > .invert h5, #wrapper > .invert h6 {
+			#wrapper > #wrapper  {
 				color: #ffffff;
 			}
 
