@@ -63,7 +63,6 @@ body {
 .profile-photo-container img {
 	width: 100%;
 	height: 150%;
-	object-fit: cover; /* Ensures the image covers the container and doesn't distort */
 }
 
 /*Projects Coming Soon--> */
