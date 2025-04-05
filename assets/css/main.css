@@ -30,6 +30,18 @@ html, body {
     overflow-x: hidden;
     width: 100%;
 }
+header {
+	position: fixed; /* Keeps the header at the top */
+	top: 0; /* Positions the header at the top of the viewport */
+	left: 0; /* Ensures the header spans the full width */
+	width: 100%; /* Ensures the header spans the full width */
+	background-color: #f2f2f2; /* Optional: Add a background color */
+	padding: 10px; /* Optional: Add some padding */
+	z-index: 100; /* Ensure the header stays on top of other elements */
+  }
+  main {
+	padding-top: 10px; /* Adjust this value to match the header's height */
+  }
 
 ol, ul {
 	list-style: none;
