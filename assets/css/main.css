@@ -31,37 +31,44 @@ html, body {
     width: 100%;
 }
 header {
-	position: fixed; /* Keeps the header at the top */
-	top: 0; /* Positions the header at the top of the viewport */
-	left: 0; /* Ensures the header spans the full width */
-	height: 5vh;
-	width: 100%; /* Ensures the header spans the full width */
-	background-color: #ffffff; /* Optional: Add a background color */
-	padding: 10px; /* Optional: Add some padding */
-	z-index: 100; /* Ensure the header stays on top of other elements */
-  }
-header h1{
-	font-size: 20px;
-	margin: 5px 0;
-}
-  .navbar {
+	display: flex; /* 👈 Enables horizontal layout */
+	justify-content: space-between; /* 👈 Space between title and nav */
+	align-items: center; /* 👈 Vertically center items */
 	position: fixed;
 	top: 0;
-	right: 0;
-	width: auto; /* or a specific width if needed */
-	/* Add any other styling here (background color, padding, etc.) */
+	left: 0;
+	width: 100%;
+	background-color: #ffffff;
+	padding: 10px 20px;
+	z-index: 100;
+	height: auto;
 }
+
+header h1 {
+	font-size: 20px;
+	margin: 0;
+}
+
+.navbar {
+	/* Removed position: fixed */
+}
+
 .navbar ul {
 	list-style: none;
 	padding: 0;
 	margin: 0;
+	display: flex; /* 👈 Lay nav items horizontally */
+	gap: 15px; /* Optional spacing between items */
 }
-  
+
 .navbar li {
 	font-size: 20px;
-	margin: 5px 0;
-	display: inline;
-	margin-left: 10px;
+	margin: 0;
+}
+
+.navbar a {
+	text-decoration: none;
+	color: inherit;
 }
 
 main {
