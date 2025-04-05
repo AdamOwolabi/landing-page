@@ -34,14 +34,39 @@ header {
 	position: fixed; /* Keeps the header at the top */
 	top: 0; /* Positions the header at the top of the viewport */
 	left: 0; /* Ensures the header spans the full width */
+	height: 5vh;
 	width: 100%; /* Ensures the header spans the full width */
-	background-color: #f2f2f2; /* Optional: Add a background color */
+	background-color: #ffffff; /* Optional: Add a background color */
 	padding: 10px; /* Optional: Add some padding */
 	z-index: 100; /* Ensure the header stays on top of other elements */
   }
-  main {
+header h1{
+	font-size: 20px;
+	margin: 5px 0;
+}
+  .navbar {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: auto; /* or a specific width if needed */
+	/* Add any other styling here (background color, padding, etc.) */
+}
+.navbar ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+  
+.navbar li {
+	font-size: 20px;
+	margin: 5px 0;
+	display: inline;
+	margin-left: 10px;
+}
+
+main {
 	padding-top: 10px; /* Adjust this value to match the header's height */
-  }
+}
 
 ol, ul {
 	list-style: none;
