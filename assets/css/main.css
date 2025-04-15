@@ -98,19 +98,15 @@ body {
 }
 
 .profile-photo-container {
-	width: 300px; /* or use a relative unit like 20vw */
-	height: 300px; /* maintain same height as width for perfect circle */
+	width: 300px; /* Adjust as needed */
+	height: 300px; /* Adjust as needed */
 	border-radius: 50%;
-	overflow: hidden;
-	margin: 0 auto; /* Center horizontally using margin instead of transform */
-	position: relative; /* Create positioning context */
-  }
-  
+	overflow: hidden; /* Hides any part of the image that spills out of the circle */
+	transform: translate(-180%, 85%); /* Center the container */
+}
 .profile-photo-container img {
-width: 100%;
-height: 100%; /* Set to 100% to fill the container */
-object-fit: cover; /* This maintains aspect ratio while filling the container */
-object-position: center; /* Centers the image within the container */
+	width: 100%;
+	height: 150%;
 }
 
 /*Projects Coming Soon--> */
