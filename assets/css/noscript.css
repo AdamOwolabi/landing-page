@@ -6,15 +6,7 @@
 
 /* Banner (transitions) */
 
-
-
-	body.is-preload .banner.onload-content-fade-up .content {
-		-moz-transform: none;
-		-webkit-transform: none;
-		-ms-transform: none;
-		transform: none;
-		opacity: 1;
-	}
+	
 
 	.banner.onload-content-fade-down .content {
 		-moz-transition: none;
