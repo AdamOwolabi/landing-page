@@ -30,7 +30,19 @@ html, body {
     overflow-x: hidden;
     width: 100%;
 }
-
+header {
+	display: flex; /* 👈 Enables horizontal layout */
+	justify-content: space-between; /* 👈 Space between title and nav */
+	align-items: center; /* 👈 Vertically center items */
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #ffffff;
+	padding: 10px 20px;
+	z-index: 100;
+	height: auto;
+}
 
 header h1 {
 	font-size: 20px;
