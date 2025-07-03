@@ -44,9 +44,12 @@ header {
 	height: auto;
 }
 
-header h1 {
+header h1, 
+header .navbar ul li a {
 	font-size: 20px;
 	margin: 0;
+	font-weight : 550;
+	letter-spacing: 1px;
 }
 
 .navbar {
