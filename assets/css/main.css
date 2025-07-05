@@ -139,13 +139,16 @@ body {
   }
 }
 /*Projects Coming Soon--> */
-.projects-text{
+.projects-text {
 	width: 90%;
 	height: 150%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	
+
+	/* Reduce the size of the text */
+	font-size: 1.5rem; /* Adjust as needed */
+	line-height: 1.2; /* Improve readability */
 }
 
 mark {
