@@ -150,7 +150,7 @@ body {
 }
 
 /* Make the banner section a flex container and center items vertically */
-
+/* 
 .profile-photo-container {
   width: 300px;
   height: 300px;
@@ -170,13 +170,13 @@ body {
 .banner {
   display: flex;
   align-items: center;      /* Vertically center content and photo */
-  justify-content: space-between; /* Puts space between text and photo */
-  gap: 2rem;               /* Space between content and photo */
-  padding: 2rem;     
+  /* justify-content: space-between; /* Puts space between text and photo */
+   /* gap: 2rem;  */             
+  /* padding: 2rem;     
 }
 
 /* Responsive: stack vertically and center on small screens */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .banner {
     flex-direction: column;
     align-items: center;
@@ -185,6 +185,51 @@ body {
   .profile-photo-container {
     margin-right: 0;
     margin-bottom: 1rem;
+  }
+}   */
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem;
+  min-height: 100vh;
+  position: relative;
+}
+
+.profile-photo-container {
+  width: 300px;  /* Fixed width */
+  height: 300px; /* Fixed height */
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0; /* Prevents image from shrinking */
+  margin-left: 2rem; /* Adds space between text and image */
+}
+
+.profile-photo-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintains aspect ratio */
+  object-position: center; /* Centers the image */
+}
+
+.content {
+  flex: 1;
+  padding-right: 2rem;
+}
+
+/* For mobile responsiveness */
+@media screen and (max-width: 768px) {
+  .banner {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .profile-photo-container {
+    margin: 2rem 0;
+    width: 250px;
+    height: 250px;
   }
 }
 /*Projects Coming Soon--> */
