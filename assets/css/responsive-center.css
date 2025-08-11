@@ -1,0 +1,402 @@
+/* Responsive Centering Styles for Personal Website */
+
+/* Center the main container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+#wrapper {
+    max-width: 900px; /* Set a specific width for better centering */
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Override banner styles to ensure centering */
+section.banner {
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    padding: 4rem 0 !important;
+}
+
+/* Center the banner section content */
+.banner {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    min-height: 100vh;
+    padding: 2rem;
+    text-align: center;
+}
+
+.banner .content {
+    flex: 1;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.banner .image {
+    flex: 0 0 300px;
+    margin: 0 auto;
+}
+
+/* Fix circular image */
+.banner .image img {
+    width: 350px !important;
+    height: 350px !important;
+    border-radius: 50% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+}
+
+/* Center the section headings */
+.section {
+    max-width: 100%; /* Use full wrapper width */
+    margin: 4rem 0; /* Remove auto centering */
+    padding: 0; /* Remove padding to align with wrapper */
+    text-align: left; /* Left align to match banner content */
+}
+
+.section h4 {
+    margin: 2rem 0;
+    line-height: 1.4;
+}
+
+/* Center the footer */
+footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+footer .inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .icons {
+    justify-content: center;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 980px) {
+    .banner {
+        flex-direction: column !important;
+        padding: 1.5rem;
+    }
+    
+    .banner .image {
+        margin-top: 2rem;
+        flex: 0 0 250px;
+    }
+    
+    .section {
+        margin: 2rem auto;
+        padding: 0 1rem;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    .container {
+        padding: 0 0.5rem;
+    }
+    
+    .banner {
+        padding: 1rem;
+    }
+    
+    .banner .image {
+        flex: 0 0 200px;
+    }
+    
+    .section {
+        margin: 1.5rem auto;
+    }
+    
+    .section h4 {
+        margin: 1.5rem 0;
+        font-size: 1.2rem;
+    }
+}
+
+/* Projects Grid Styling */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 projects per row */
+    gap: 2rem;
+    margin: 2rem 0 4rem 0;
+}
+
+.project-card {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.project-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.05);
+}
+
+.project-content {
+    padding: 0.65rem;
+}
+
+.project-content h5 {
+    margin: 0 0 0.3rem 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.project-content p {
+    margin: 0 0 0.4rem 0;
+    color: #666;
+    line-height: 1.3;
+    font-size: 0.8rem;
+}
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.project-link {
+    padding: 0.5rem 1rem;
+    background: #007BFF;
+    color: white !important;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    transition: background 0.3s ease;
+}
+
+.project-link:hover {
+    background: #0056b3;
+    color: white !important;
+}
+
+/* Updated Project Actions - Clean Icon Design */
+.project-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.3rem;
+}
+
+.github-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    background: #f6f8fa;
+    color: #24292e !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    border: 1px solid #e1e4e8;
+}
+
+.github-icon:hover {
+    background: #e1e4e8;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(209, 213, 219, 0.4);
+    border-color: #d0d7de;
+}
+
+.view-button {
+    background: #f6f8fa;
+    color: #24292e !important;
+    padding: 8px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 1px solid #e1e4e8;
+}
+
+.view-button:hover {
+    transform: translateY(-2px);
+    background: #e1e4e8;
+    border-color: #d0d7de;
+    box-shadow: 0 4px 12px rgba(209, 213, 219, 0.4);
+}
+
+.view-button i {
+    font-size: 0.8rem;
+}
+
+.view-button span {
+    font-weight: 500;
+}
+
+/* Responsive adjustments for projects grid */
+@media screen and (max-width: 980px) {
+    .projects-grid {
+        grid-template-columns: 1fr; /* Stack to single column on mobile */
+        gap: 1.5rem;
+    }
+    
+    .project-image {
+        height: 180px;
+    }
+    
+    .project-content {
+        padding: 1.25rem;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    .projects-grid {
+        gap: 1rem;
+        margin: 1.5rem 0 3rem 0;
+    }
+    
+    .project-image {
+        height: 160px;
+    }
+    
+    .project-content {
+        padding: 1rem;
+    }
+    
+    .project-content h5 {
+        font-size: 1.1rem;
+    }
+    
+    .project-content p {
+        font-size: 0.85rem;
+    }
+    
+    .project-links {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .project-link {
+        text-align: center;
+        padding: 0.75rem 1rem;
+    }
+}
+
+/* Projects Preview - Compact version for main page */
+.projects-preview {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin: 1.5rem 0 3rem 0;
+}
+
+.project-preview-card {
+    background: #ffffff;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.project-preview-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.project-preview-image {
+    width: 100%;
+    height: 120px;
+    overflow: hidden;
+}
+
+.project-preview-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.project-preview-card:hover .project-preview-image img {
+    transform: scale(1.05);
+}
+
+.project-preview-content {
+    padding: 1rem;
+}
+
+.project-preview-content h6 {
+    margin: 0 0 0.5rem 0;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.project-preview-content p {
+    margin: 0;
+    color: #666;
+    font-size: 0.8rem;
+    line-height: 1.3;
+}
+
+/* Responsive adjustments for projects preview */
+@media screen and (max-width: 980px) {
+    .projects-preview {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+    }
+    
+    .project-preview-image {
+        height: 100px;
+    }
+    
+    .project-preview-content {
+        padding: 0.75rem;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    .projects-preview {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+        margin: 1rem 0 2rem 0;
+    }
+    
+    .project-preview-image {
+        height: 140px;
+    }
+    
+    .project-preview-content h6 {
+        font-size: 0.9rem;
+    }
+    
+    .project-preview-content p {
+        font-size: 0.75rem;
+    }
+}
