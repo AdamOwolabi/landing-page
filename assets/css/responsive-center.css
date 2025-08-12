@@ -259,6 +259,62 @@ footer .icons {
     font-weight: 500;
 }
 
+/* Tech Stack Icons */
+.tech-stack {
+    display: flex;
+    gap: 0.75rem;
+    margin: 0.4rem 0;
+    align-items: center;
+}
+
+.tech-stack i {
+    font-size: 1.2rem;
+    color: #666;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.tech-stack i:hover {
+    color: #333;
+    transform: scale(1.1);
+}
+
+/* Specific tech icon colors */
+.tech-stack .fa-react {
+    color: #61DAFB;
+}
+
+.tech-stack .fa-node-js {
+    color: #339933;
+}
+
+.tech-stack .fa-database {
+    color: #47A248;
+}
+
+.tech-stack .fa-vuejs {
+    color: #4FC08D;
+}
+
+.tech-stack .fa-fire {
+    color: #FF6B35;
+}
+
+.tech-stack .fa-js-square {
+    color: #F7DF1E;
+}
+
+.tech-stack .fa-python {
+    color: #3776AB;
+}
+
+.tech-stack .fa-html5 {
+    color: #E34F26;
+}
+
+.tech-stack .fa-css3-alt {
+    color: #1572B6;
+}
+
 /* Responsive adjustments for projects grid */
 @media screen and (max-width: 980px) {
     .projects-grid {
@@ -314,6 +370,12 @@ footer .icons {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     margin: 1.5rem 0 3rem 0;
+    padding-left: 1.5rem;
+}
+
+/* Shift the Recent Work description text */
+.section h4 + p {
+    padding-left: 1.5rem;
 }
 
 .project-preview-card {
