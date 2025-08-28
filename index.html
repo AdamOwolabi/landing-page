@@ -30,9 +30,9 @@
 					<h1 href="#">Adam Owolabi</h1>
 					<nav class="navbar">
 					  <ul>
-						<li><a href="#">About</a></li>
-						<li><a href="projects.html">Projects</a></li>
-						<li><a href="#">Contacts</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#projects">Projects</a></li>
+						<li><a href="#contact">Contact</a></li>
 					  </ul>
 					</nav>
 				</header>
@@ -52,16 +52,32 @@
 					</div> 
 				</section>
 
-					
-
 				<!--Projects Coming Soon-->
-				<div style=" font-family: 'Bitcount Grid Single', monospace; " class="section">
+				<div style=" font-family: 'Bitcount Grid Single', monospace; " class="section" id="about">
 					<h4>About</h4>
-					<h4>Social</h4>
-					<h4>Recent Work</h4>
+					<p>I'm Adam Owolabi, 20-year-old developer who enjoys building scalable systems, engineering backend applications, and managing teams.</p>
+					<p>I like to <span class="animated-text">Learn</span></p>
+
+					<h4 id="socials">Socials</h4>
+					<div class="social-icons">
+						<a href="http://www.linkedin.com/in/adam-owolabi" class="social-icon">
+							<i class="fab fa-linkedin-in"></i>
+						</a>
+						<a href="https://github.com/AdamOwolabi" class="social-icon">
+							<i class="fab fa-github"></i>
+						</a>
+						<a href="https://leetcode.com/u/Adam0789/" class="social-icon leetcode-svg">
+							<svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+								<path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.438-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/>
+							</svg>
+						</a>
+						<a href="mailto:adamowolabi9@gmail.com" class="social-icon">
+							<i class="fas fa-envelope"></i>
+						</a>
+					</div>
+
+					<h4 id="projects">Recent Work</h4>
 					<p>A quick look at some of my latest projects. <a href="projects.html">View all projects →</a></p>
-					
-					<!-- Compact Projects Preview -->
 					<div class="projects-preview">
 						<div class="project-preview-card">
 							<div class="project-preview-image">
@@ -72,7 +88,6 @@
 								<p>React, Node.js, MongoDB</p>
 							</div>
 						</div>
-						
 						<div class="project-preview-card">
 							<div class="project-preview-image">
 								<img src="./images/pic02.jpg" alt="Task Management App">
@@ -82,7 +97,6 @@
 								<p>Vue.js, Firebase</p>
 							</div>
 						</div>
-						
 						<div class="project-preview-card">
 							<div class="project-preview-image">
 								<img src="./images/pic03.jpg" alt="Weather Dashboard">
@@ -92,7 +106,6 @@
 								<p>JavaScript, Chart.js, API</p>
 							</div>
 						</div>
-						
 						<div class="project-preview-card">
 							<div class="project-preview-image">
 								<img src="./images/spotlight01.jpg" alt="Portfolio Website">
@@ -103,23 +116,60 @@
 							</div>
 						</div>
 					</div>
-					
-					<h4>Certificates</h4>
-					<h4>Typing Speed</h4>
+
+					<h4 id="certificates">Certificates</h4>
+					<p class="certs-intro">Validated achievements and credentials that highlight core strengths.</p>
+					<div class="certificates-grid">
+						<div class="certificate-card">
+							<div class="cert-icon"><i class="fas fa-award"></i></div>
+							<div class="cert-content">
+								<h6>AWS Certified Cloud Practitioner</h6>
+								<p class="issuer">Amazon Web Services • 2025</p>
+								<div class="cert-tags"><span>Cloud</span><span>AWS</span><span>Foundational</span></div>
+								<div class="cert-actions">
+									<a href="#" class="cert-link view">View</a>
+									<a href="#" class="cert-link verify">Verify</a>
+								</div>
+							</div>
+						</div>
+						<div class="certificate-card">
+							<div class="cert-icon"><i class="fas fa-certificate"></i></div>
+							<div class="cert-content">
+								<h6>Google Data Analytics Professional</h6>
+								<p class="issuer">Google / Coursera • 2024</p>
+								<div class="cert-tags"><span>Analytics</span><span>SQL</span><span>Dashboards</span></div>
+								<div class="cert-actions">
+									<a href="#" class="cert-link view">View</a>
+									<a href="#" class="cert-link verify">Verify</a>
+								</div>
+							</div>
+						</div>
+						<div class="certificate-card">
+							<div class="cert-icon"><i class="fas fa-shield-alt"></i></div>
+							<div class="cert-content">
+								<h6>CompTIA Security+ (In Progress)</h6>
+								<p class="issuer">CompTIA • 2025</p>
+								<div class="cert-tags"><span>Security</span><span>Risk</span></div>
+								<div class="cert-actions">
+									<a href="#" class="cert-link view disabled" tabindex="-1">Pending</a>
+								</div>
+							</div>
+						</div>
+						<div class="certificate-card add-new">
+							<div class="cert-icon"><i class="fas fa-plus"></i></div>
+							<div class="cert-content">
+								<h6>Add Certificate</h6>
+								<p class="issuer">Coming Soon</p>
+								<div class="cert-tags placeholder"><span>+</span></div>
+								<div class="cert-actions">
+									<a href="#" class="cert-link view">Edit</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
 					<h4>Life Lessons</h4>
 				</div>
-
-	
-				<!-- Footer -->
-					<footer class="wrapper style1 align-center">
-						<div class="inner">
-							<ul class="icons">
-								<li><a href="http://www.linkedin.com/in/adam-owolabi-3056431bb" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-								<li><a href="mailto:adamowolabi9@gmail.com" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
-								<li><a href="https://github.com/AdamOwolabi" class="icon brands style2 fa-github"><span class="label">Github</span></a></li>
-							</ul>
-						</div>
-					</footer>
 			</div>			
 
 		<!-- Scripts -->
@@ -130,6 +180,39 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			
+			<!-- Animated Text Script -->
+			<script>
+				document.addEventListener('DOMContentLoaded', function() {
+					const words = ['Learn.', 'Grow.', 'Build.'];
+					const animatedText = document.querySelector('.animated-text');
+					let currentIndex = 0;
+					
+					function changeWord() {
+						// Fade out
+						animatedText.classList.add('fade-out');
+						
+						setTimeout(() => {
+							// Change text
+							currentIndex = (currentIndex + 1) % words.length;
+							animatedText.textContent = words[currentIndex];
+							
+							// Fade in
+							animatedText.classList.remove('fade-out');
+							animatedText.classList.add('fade-in');
+							
+							setTimeout(() => {
+								animatedText.classList.remove('fade-in');
+							}, 500);
+						}, 250);
+					}
+					
+					// Start animation after 2 seconds, then repeat every 3 seconds
+					setTimeout(() => {
+						setInterval(changeWord, 3000);
+					}, 2000);
+				});
+			</script>
 	</body>
 </html>
 
